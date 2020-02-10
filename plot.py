@@ -7,7 +7,7 @@ plt.style.use('ggplot')
 plt.rc('font', family='monospace')
 
 step = 0.1
-start = -5
+start = -3
 stop = -start
 # include stop
 xval = np.arange(start, stop+step, step)
