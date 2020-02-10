@@ -15,6 +15,14 @@ funcNum = int(sys.argv[1])
 def f1(x):
     return x
 
+def f2(x):
+    return np.sin(x)
+
+def f3(x):
+    return np.cos(x)
+
+def f4(x):
+    return np.tan(x)
 
 def runFunc(i):
     return{
