@@ -1,7 +1,7 @@
+from __future__ import print_function
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
-from __future__ import print_function
 
 plt.style.use('ggplot')
 plt.rc('font', family='monospace')
