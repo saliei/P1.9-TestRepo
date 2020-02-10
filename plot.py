@@ -12,13 +12,13 @@ stop = -start
 xval = np.arange(start, stop+step, step)
 funcNum = int(sys.argv[1])
 
-def f(x):
+def f1(x):
     return x
 
 
 def runFunc(i):
     return{
-            1: f(xval)
+            1: f1(xval)
             }[i]
 
 yval = runFunc(funcNum)
