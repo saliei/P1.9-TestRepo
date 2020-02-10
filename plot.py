@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,6 +11,12 @@ start = -5
 stop = -start
 # include stop
 xval = np.arange(start, stop+step, step)
+
+if len(sys.argv) < 2:
+    print("Usage: plot.py <func-number>")
+    print("\t <func-number>: 1: f(x)=x")
+    exit(1)
+
 funcNum = int(sys.argv[1])
 
 def f1(x):
