@@ -15,6 +15,8 @@ funcNum = int(sys.argv[1])
 def f1(x):
     return x
 
+def f2(x):
+    return x**2
 
 def runFunc(i):
     return{
