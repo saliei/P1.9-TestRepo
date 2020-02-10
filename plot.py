@@ -18,6 +18,9 @@ def f1(x):
 def f2(x):
     return x**2
 
+def f3(x):
+    return x**3
+
 def runFunc(i):
     return{
             1: f1(xval)
