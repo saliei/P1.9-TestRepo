@@ -15,6 +15,8 @@ xval = np.arange(start, stop+step, step)
 if len(sys.argv) < 2:
     print("Usage: plot.py <func-number>")
     print("\t <func-number>: 1: f(x)=x")
+    exit(1)
+
 funcNum = int(sys.argv[1])
 
 def f1(x):
