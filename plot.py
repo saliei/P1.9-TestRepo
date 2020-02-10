@@ -29,6 +29,7 @@ def runFunc(i):
             1: f1(xval),
             2: f2(xval),
             3: f3(xval),
+            4: f4(xval),
             }[i]
 
 yval = runFunc(funcNum)
