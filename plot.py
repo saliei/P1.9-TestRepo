@@ -20,6 +20,8 @@ if len(sys.argv) < 2:
     print("\t <func-number>: 4: f(x)=sin(x)")
     print("\t <func-number>: 5: f(x)=cos(x)")
     print("\t <func-number>: 6: f(x)=tan(x)")
+    print("\t <func-number>: 7: f(x)=exp(x)")
+    print("\t <func-number>: 8: f(x)=sqrt(|x|)")
     exit(1)
 
 funcNum = int(sys.argv[1])
@@ -42,6 +44,12 @@ def f5(x):
 def f6(x):
     return np.tan(x)
 
+def f7(x):
+    return np.exp(x)
+
+def f8(x):
+    return np.sqrt(np.abs(x))
+
 def runFunc(i):
     return{
             1: f1(xval),
@@ -50,6 +58,8 @@ def runFunc(i):
             4: f4(xval),
             5: f5(xval),
             6: f6(xval),
+            7: f7(xval),
+            8: f8(xval),
             }[i]
 
 yval = runFunc(funcNum)
