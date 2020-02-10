@@ -22,6 +22,11 @@ funcNum = int(sys.argv[1])
 def f1(x):
     return x
 
+def f2(x):
+    return np.exp(x)
+
+def f3(x):
+    return np.sqrt(np.abs(x))
 
 def runFunc(i):
     return{
