@@ -30,7 +30,9 @@ def f3(x):
 
 def runFunc(i):
     return{
-            1: f1(xval)
+            1: f1(xval),
+            2: f2(xval),
+            3: f3(xval),
             }[i]
 
 yval = runFunc(funcNum)
