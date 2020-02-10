@@ -25,6 +25,9 @@ if len(sys.argv) < 2:
     exit(1)
 
 funcNum = int(sys.argv[1])
+if funcNum < 1 or funcNum > 8:
+    print("Please provide a value between 1 to 8.")
+    exit(1)
 
 def f1(x):
     return x
@@ -35,7 +38,7 @@ def f2(x):
 def f3(x):
     return x**3
 
-def f4(x)
+def f4(x):
     return np.sin(x)
 
 def f5(x):
@@ -63,7 +66,6 @@ def runFunc(i):
             }[i]
 
 yval = runFunc(funcNum)
-
 plt.plot(xval, yval, lw=1, ls='-', marker='o', ms=3)
 plt.xlabel('X')
 plt.ylabel('Y')
