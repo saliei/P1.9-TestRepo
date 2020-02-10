@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -10,3 +11,4 @@ xval = np.linspace(start, stop+step, step)
 def f(x):
     return x
 
+funcNum = int(sys.argv[1])
