@@ -7,8 +7,15 @@ start = -5
 stop = -start
 # include stop
 xval = np.linspace(start, stop+step, step)
+funcNum = int(sys.argv[1])
 
 def f(x):
     return x
 
-funcNum = int(sys.argv[1])
+
+def runFunc(i):
+    return{
+            1: f(x)
+            }[x]
+
+yval = runFunc(funcNum)
