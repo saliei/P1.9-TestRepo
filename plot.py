@@ -23,9 +23,7 @@ def runFunc(i):
 
 yval = runFunc(funcNum)
 
-print(xval)
-print(yval)
-#plt.plot(xval, yval, lw=1, ls='-', marker='o')
-#plt.xlabel('X')
-#plt.ylabel('Y')
-#plt.show()
+plt.plot(xval, yval, lw=1, ls='-', marker='o', ms=3)
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.show()
